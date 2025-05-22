@@ -25,6 +25,9 @@ app.set('views', './src/views');
 
 app.use(homeController);
 app.use('/movies',movieController)
+app.all('*url', (req, res) => {
+    res.status(404).render('404');
+});
 
 //Start express web server
 app.listen(5000,() => {
