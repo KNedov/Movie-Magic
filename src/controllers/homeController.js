@@ -12,9 +12,6 @@ homeController.get('/', (req, res) => {
 homeController.get('/about', (req, res) => {
   res.render('about');
 });
-homeController.get ('/create', (req, res) => {
-  res.render('create');
-});
 homeController.get('/details', (req, res) => {
   res.render('details');
 });

@@ -1,6 +1,7 @@
 import express from 'express';
 import handlebars from 'express-handlebars';
 import homeController from './controllers/homeController.js';
+import movieController from './controllers/movieControler.js';
 
 
 
@@ -20,6 +21,7 @@ app.set('views', './src/views');
 
 
 app.use(homeController);
+app.use('/movies',movieController)
 
 //Start express web server
 app.listen(5000,() => {
