@@ -1,4 +1,5 @@
 import { create } from "express-handlebars";
+import { v4 as uuid} from "uuid";
 
 const movies = [{
     id: "a3682672-0ee401284-8759-35ee253329zv",
@@ -91,6 +92,10 @@ export default {
         return movies;
     },
     createMovie(movieData) {
+        //Generate unique id
+        
+        movieData.id = uuid();
+        //add movie to movies array
         movies.push(movieData);
         return movieData
     },
