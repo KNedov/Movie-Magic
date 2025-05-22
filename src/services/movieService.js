@@ -88,8 +88,18 @@ const movies = [{
     },
 ];
 export default {    
-    getAll() {
-        return movies;
+    getAll(filter={}) {
+        let result=movies.slice();
+        if(filter.search) {
+            result=result.filter(m=>m.title.toLowerCase().includes(filter.search.toLowerCase()));
+        }
+        if(filter.category) {
+            result=result.filter(m=>m.category.toLowerCase()===filter.category.toLowerCase());
+        }
+        if(filter.year) {
+            result=result.filter(m=>m.year.toString()===filter.year.toString());
+        }
+        return result;
     },
     createMovie(movieData) {
         //Generate unique id
