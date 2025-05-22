@@ -1,0 +1,21 @@
+import express from 'express';
+
+const homeController=express.Router();
+
+homeController.get('/', (req, res) => {
+  res.render('home');
+});
+homeController.get('/about', (req, res) => {
+  res.render('about');
+});
+homeController.get ('/create', (req, res) => {
+  res.render('create');
+});
+homeController.get('/details', (req, res) => {
+  res.render('details');
+});
+homeController.get('/search', (req, res) => {
+  res.render('search');
+});
+export default homeController;
+// This code defines a set of routes for an Express application using the Express Router.

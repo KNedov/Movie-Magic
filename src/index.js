@@ -1,5 +1,7 @@
 import express from 'express';
-import handebars from 'express-handlebars';
+import handlebars from 'express-handlebars';
+import router from './controllers/homeController.js';
+
 
 //Init express instance
 const app = express();
@@ -7,7 +9,7 @@ const app = express();
 //This middleware will serve static files from the public directory
 app.use(express.static('./src/public'));
 //Add and config view engine
-app.engine('hbs', handebars.engine({
+app.engine('hbs', handlebars.engine({
     extname: '.hbs'
 }));
 //Set default engine
@@ -15,23 +17,8 @@ app.set('view engine', 'hbs');
 //Set views directory
 app.set('views', './src/views');
 
-//Config routes
-app.get('/', (req, res) => {
-  res.render('home');
-});
-app.get('/about', (req, res) => {
-  res.render('about');
-});
-app.get ('/create', (req, res) => {
-  res.render('create');
-});
-app.get('/details', (req, res) => {
-  res.render('details');
-});
-app.get('/search', (req, res) => {
-  res.render('search');
-});
 
+app.use(router);
 
 //Start express web server
 app.listen(5000,() => {
