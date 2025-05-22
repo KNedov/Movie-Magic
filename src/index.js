@@ -3,6 +3,9 @@ import handebars from 'express-handlebars';
 
 //Init express instance
 const app = express();
+//Add static middleware
+//This middleware will serve static files from the public directory
+app.use(express.static('./src/public'));
 //Add and config view engine
 app.engine('hbs', handebars.engine({
     extname: '.hbs'
