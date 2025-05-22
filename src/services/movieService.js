@@ -93,8 +93,8 @@ export default {
         if(filter.search) {
             result=result.filter(m=>m.title.toLowerCase().includes(filter.search.toLowerCase()));
         }
-        if(filter.category) {
-            result=result.filter(m=>m.category.toLowerCase()===filter.category.toLowerCase());
+        if(filter.genre) {
+            result=result.filter(m=>m.genre.toLowerCase()===filter.genre.toLowerCase());
         }
         if(filter.year) {
             result=result.filter(m=>m.year.toString()===filter.year.toString());
