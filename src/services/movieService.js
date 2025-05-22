@@ -1,3 +1,5 @@
+import { create } from "express-handlebars";
+
 const movies = [{
     id: "a3682672-0ee401284-8759-35ee253329zv",
     title: "Jungle Cruise",
@@ -87,5 +89,9 @@ const movies = [{
 export default {    
     getAll() {
         return movies;
+    },
+    createMovie(movieData) {
+        movies.push(movieData);
+        return movieData
     }
 }
