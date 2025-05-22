@@ -93,5 +93,9 @@ export default {
     createMovie(movieData) {
         movies.push(movieData);
         return movieData
+    },
+    getOne(movieId) {
+        const movie = movies.find((m) => m.id === movieId);
+        return movie;
     }
 }
