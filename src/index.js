@@ -1,6 +1,7 @@
 import express from 'express';
 import handlebars from 'express-handlebars';
-import router from './controllers/homeController.js';
+import homeController from './controllers/homeController.js';
+
 
 
 //Init express instance
@@ -18,7 +19,7 @@ app.set('view engine', 'hbs');
 app.set('views', './src/views');
 
 
-app.use(router);
+app.use(homeController);
 
 //Start express web server
 app.listen(5000,() => {
