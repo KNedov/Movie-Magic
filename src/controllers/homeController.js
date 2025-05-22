@@ -12,8 +12,10 @@ homeController.get('/', (req, res) => {
 homeController.get('/about', (req, res) => {
   res.render('about');
 });
-homeController.get('/details', (req, res) => {
-  res.render('details');
+homeController.get('/:movieId/details', (req, res) => {
+  const movieId = req.params.movieId;
+  const movie = movieService.getOne(movieId);
+  res.render('details', { movie });
 });
 homeController.get('/search', (req, res) => {
   res.render('search');

@@ -15,7 +15,13 @@ app.use(express.static('./src/public'));
 app.use(express.urlencoded());
 //Add and config view engine
 app.engine('hbs', handlebars.engine({
-    extname: '.hbs'
+    extname: '.hbs',
+    helpers:{
+        showRating(rating){
+            //return "&#x2605".repeat(Math.floor(rating)) 
+            return "★".repeat(Math.floor(rating)) 
+        }
+    }
 }));
 //Set default engine
 app.set('view engine', 'hbs');
