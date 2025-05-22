@@ -1,2 +1,11 @@
 import express from 'express';
-console.log('Hello from the server!');
+
+const app = express();
+app.get('/', (req, res) => {
+  res.send('Welcome to Movie Magic!');
+});
+
+app.listen(5000,() => {
+    console.log('Server is listening on http://localhost:5000.....');
+    console.log('Press Ctrl+C to stop the server');
+});
