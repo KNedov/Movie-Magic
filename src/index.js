@@ -1,10 +1,23 @@
 import express from 'express';
+import handebars from 'express-handlebars';
 
+//Init express instance
 const app = express();
+//Add and config view engine
+app.engine('hbs', handebars.engine({
+    extname: '.hbs'
+}));
+//Set default engine
+app.set('view engine', 'hbs');
+//Set views directory
+app.set('views', './src/views');
+
+//Config routes
 app.get('/', (req, res) => {
-  res.send('Welcome to Movie Magic!');
+  res.render('home',{layout:false});
 });
 
+//Start express web server
 app.listen(5000,() => {
     console.log('Server is listening on http://localhost:5000.....');
     console.log('Press Ctrl+C to stop the server');
