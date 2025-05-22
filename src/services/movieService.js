@@ -4,7 +4,7 @@ const movies = [{
     genre: "Action",
     description:
         "Dr. Lily Houghton enlists Frank Wolff to guide her down the Amazon in search of an ancient tree that holds the power to heal.",
-        imgUrl: "/img/jungle-cruise.jpeg",
+        imageUrl: "/img/jungle-cruise.jpeg",
     director: "Jaume Collet-Serra",
     year: 2021,
     rating: 7.2,
@@ -18,7 +18,7 @@ const movies = [{
             "A thief who steals corporate secrets through the use of dream-sharing technology is given the inverse task of planting an idea into the mind of a CEO.",
         director: "Christopher Nolan",
         year: 2010,
-        imgUrl: "https://th.bing.com/th/id/OIP.KvWY-Lps3p8FLMjUcFTK3wHaKz?w=126&h=184&c=7&r=0&o=5&cb=iwc2&dpr=1.5&pid=1.7",
+        imageUrl: "https://th.bing.com/th/id/OIP.KvWY-Lps3p8FLMjUcFTK3wHaKz?w=126&h=184&c=7&r=0&o=5&cb=iwc2&dpr=1.5&pid=1.7",
         rating: 8.8,
         category: "Action",
         
@@ -31,7 +31,7 @@ const movies = [{
             "A team of explorers travel through a wormhole in space in an attempt to ensure humanity's survival.",
         director: "Christopher Nolan",
         year: 2014,
-        imgUrl: "https://static1.colliderimages.com/wordpress/wp-content/uploads/interstellar-imax-poster.jpg",
+        imageUrl: "https://static1.colliderimages.com/wordpress/wp-content/uploads/interstellar-imax-poster.jpg",
         rating: 8.6,
         category: "Action",
     },
@@ -43,7 +43,7 @@ const movies = [{
             "When the menace known as the Joker emerges from his mysterious past, he wreaks havoc and chaos on the people of Gotham.",
         director: "Christopher Nolan",
         year: 2008,
-        imgUrl: "https://th.bing.com/th/id/R.8a7f9af240e2349f754538d2d1018375?rik=dbxlDZ%2bZpmKJnA&pid=ImgRaw&r=0",
+        imageUrl: "https://th.bing.com/th/id/R.8a7f9af240e2349f754538d2d1018375?rik=dbxlDZ%2bZpmKJnA&pid=ImgRaw&r=0",
         rating: 9.0,
         category: "Action",
     },
@@ -55,7 +55,7 @@ const movies = [{
             "A computer hacker learns from mysterious rebels about the true nature of his reality and his role in the war against its controllers.",
         director: "Lana Wachowski, Lilly Wachowski",
         year: 1999,
-        imgUrl: "https://static1.srcdn.com/wordpress/wp-content/uploads/2019/12/the-matrix-resurrections-poster.jpg",
+        imageUrl: "https://static1.srcdn.com/wordpress/wp-content/uploads/2019/12/the-matrix-resurrections-poster.jpg",
         rating: 8.7,
         category: "Action"
     },
@@ -67,7 +67,7 @@ const movies = [{
             "Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency.",
         director: "Frank Darabont",
         year: 1994,
-        imgUrl: "https://image.tmdb.org/t/p/original/q6y0Go1tsGEsmtFryDOJo3dEmqu.jpg",
+        imageUrl: "https://image.tmdb.org/t/p/original/q6y0Go1tsGEsmtFryDOJo3dEmqu.jpg",
         rating: 9.3,
         category: "Drama"
     },
@@ -79,7 +79,7 @@ const movies = [{
             "The lives of two mob hitmen, a boxer, a gangster's wife, and a pair of diner bandits intertwine in four tales of violence and redemption.",
         director: "Quentin Tarantino",
         year: 1994,
-        imgUrl: "https://picfiles.alphacoders.com/371/371109.jpg",
+        imageUrl: "https://picfiles.alphacoders.com/371/371109.jpg",
         rating: 8.9,
         category: "Crime"
     },

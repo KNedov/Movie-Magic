@@ -10,6 +10,9 @@ const app = express();
 //Add static middleware
 //This middleware will serve static files from the public directory
 app.use(express.static('./src/public'));
+
+//Add body parser middleware
+app.use(express.urlencoded());
 //Add and config view engine
 app.engine('hbs', handlebars.engine({
     extname: '.hbs'
